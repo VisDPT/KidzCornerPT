@@ -12,6 +12,7 @@ p {
     border-left: 4px groove #e6b800;
     border-right: 4px groove #00b300;
     border-bottom: 4px groove #1e90ff;
+    margin: auto;
 }
 
 #me {
