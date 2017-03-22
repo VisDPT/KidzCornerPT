@@ -42,3 +42,13 @@ header {
 #contactStyles {
     background-image: url(../img/darkPolka.jpg);
 }
+
+input {
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+textarea {
+    margin-top: 30px;
+    font-size: 14px;
+}
