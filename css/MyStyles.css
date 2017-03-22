@@ -109,3 +109,7 @@ textarea {
 .yellowText {
     color: #e6b800;
 }
+
+#diagnosis {
+    margin-top: 0px
+}
