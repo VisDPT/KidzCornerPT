@@ -37,6 +37,8 @@ header {
     ;
 }
 
-.btn:hover {
-    background-color: #00b300;
+.btn:hover {}
+
+#contactStyles {
+    background-image: url(../img/darkPolka.jpg);
 }
