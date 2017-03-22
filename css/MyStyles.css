@@ -46,9 +46,41 @@ header {
 input {
     margin-top: 40px;
     font-size: 14px;
+    border: solid black 1px;
+    padding: 5px;
 }
 
 textarea {
     margin-top: 30px;
     font-size: 14px;
+    padding: 5px;
+}
+
+#exampleTextarea {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+#send {
+    color: #000000;
+    border: 1px solid;
+    background-color: #f5f5dc
+}
+
+#send.active,
+#send:active,
+#send:focus,
+#send:hover {
+    color: #000000;
+    background-color: #fdcc52;
+    border-color: #fdcc52
+}
+
+#send {
+    border-radius: 300px;
+    padding: 10px;
+}
+
+#footerText {
+    color: #f5f5dc
 }
