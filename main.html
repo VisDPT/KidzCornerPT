@@ -36,7 +36,26 @@
     <![endif]-->
 
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Codystar|Fredericka+the+Great|Lilita+One|Londrina+Outline|Montserrat|Ranchers|Ribeye+Marrow|Sniglet|Spicy+Rice" rel="stylesheet">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbIC_-fit4MUi7H5ocA0wVjR5z10HpDoE&callback=initMap" async defer>
+    </script>
+    <script>
+        function initMap() {
+            var myLatLng = {
+                lat: 40.789543,
+                lng: -74.056534
+            };
 
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+            });
+        }
+    </script>
 
 </head>
 
@@ -176,19 +195,26 @@
     <section id="contactStyles">
         <div class="cta-content">
             <div class="container">
-                <h2 id="title"> Contact Us:</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 id="title"> Contact Us:</h2>
 
+                            <form action="https://formspree.io/kidzcornerpt@yahoo.com" method="POST" >
+                                <input type="text" name="name" placeholder="Enter name">
+                                <input type="email" name="_replyto" placeholder="Enter e-mail">
 
-                <form action="https://formspree.io/kidzcornerpt@yahoo.com" method="POST">
-                    <input type="text" name="name" placeholder="Enter name">
-                    <input type="email" name="_replyto" placeholder="Enter e-mail">
+                                <textarea type="text" name="message" class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your message."></textarea>
+                                <input type="submit" value="Send" id="send">
+                            </form>
 
-                    <textarea type="text" name="message" class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your message."></textarea>
-                    <input type="submit" value="Send" id="send">
-                </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="map">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="overlay"></div>
     </section>
 
@@ -200,6 +226,8 @@
 
         </div>
     </footer>
+
+
 
     <!-- jQuery -->
     <script src="lib/jquery/jquery.min.js"></script>
